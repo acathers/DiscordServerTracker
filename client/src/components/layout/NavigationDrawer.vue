@@ -1,5 +1,5 @@
 <template>
-    <v-navigation-drawer app class="drawer" v-model="open">
+    <v-navigation-drawer :clipped="true" app class="drawer" v-model="open">
         <v-card>
             content
         </v-card>
@@ -17,17 +17,12 @@
             }
         },
         methods: {
-            drawer(){
-                console.log(this.open);
-                this.open = !this.open;
-            }
         },
         mounted() {
-            EventBus.$on('update:open', () => this.open = !this.open)
+            EventBus.$on('update:open', () => this.open = !this.open);
         }
     }
 </script>
 
 <style scoped>
-
 </style>
