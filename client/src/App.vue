@@ -1,6 +1,7 @@
 <template>
     <v-app>
-        <Navbar/>
+        <Header/>
+        <NavigationDrawer/>
         <v-main>
             <v-container>
                 <router-view/>
@@ -13,11 +14,12 @@
 <script>
 
     import Footer from "@/components/layout/Footer";
-    import Navbar from "@/components/layout/Navbar";
+    import Header from "@/components/layout/Header";
+    import NavigationDrawer from "@/components/layout/NavigationDrawer";
     export default {
         name: 'App',
 
-        components: {Navbar, Footer},
+        components: {NavigationDrawer, Header, Footer},
 
         data: () => ({
         }),
