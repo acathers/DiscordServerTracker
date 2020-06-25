@@ -1,5 +1,5 @@
 <template>
-    <v-app>
+    <v-app id="application">
         <Header/>
         <NavigationDrawer/>
         <v-main>
@@ -25,3 +25,10 @@
         }),
     };
 </script>
+
+<style>
+  #application {
+    background-color: rgb(48, 47, 48);
+    color: azure;
+  }
+</style>

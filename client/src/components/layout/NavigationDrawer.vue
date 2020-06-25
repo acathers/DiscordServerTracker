@@ -1,7 +1,7 @@
 <template>
-    <v-navigation-drawer :clipped="true" app class="drawer" v-model="open">
+    <v-navigation-drawer :clipped="true" app dark v-model="open">
         <v-card>
-            content
+
         </v-card>
     </v-navigation-drawer>
 </template>
@@ -13,7 +13,7 @@
         name: "NavigationDrawer",
         data() {
             return {
-                open: true
+              open
             }
         },
         methods: {
